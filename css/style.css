@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.9375rem; /*15px*/
+    position: relative;
+    max-width: 19.375rem; /*310px*/
+    z-index: 2;
+    box-shadow: 0px 15px 10px rgba(0, 0, 255, 0.1);
+}
+
+.card_pattern{
+    background-image: url("./images/bg-pattern-card.svg");
+}
+
+.card_pattern #pattern {
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem; /*15px*/
+    width: 19.375rem; /*310px*/;
+}
+
+.avatar{
+    position: absolute;
+    transform: translateY(65%);
+}
+
+#avatar{
+    border-radius: 3.125rem; /*50px*/
+    border: 0.3125rem #fff solid;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.125rem ; /*18px*/
+    margin-top: 4.375rem; /*70px*/
+    width: 19.375rem; /*310px*/;
+}
+
+.line{
+    height: 0.0625rem; /*1px*/
+    background-color:hsl(0, 0%, 59%);
+    width: 21.875rem; /*350px*/
+    opacity: 0.3;
+    width: inherit;
+}
+
+.profile_stats {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+.stats {
+    display: inline-block;
+}
+  
+.stats_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name{
+    font-weight: 700;
+    color:  hsl(229, 23%, 23%);
+}
+
+#age, #location, .description{
+    color: hsl(0, 0%, 59%);
+}
+
+#location p {
+    text-align: center;
+    margin-top: 0.5625rem; /*9px*/
+    margin-bottom: 1.5625rem; /*25px*/
+    font-size: 0.875rem; /*14px*/
+}
+
+#location{
+    margin-left: 0.3125rem;
+}
+
+.num{
+    font-weight: 700;
+    color:  hsl(229, 23%, 23%);
+}
+
+.description{
+    font-size: 0.565rem ; /*9px*/
+    text-align: center;
+    letter-spacing: 0.125rem; /*2px*/
+}
+
+#top{
+    position: absolute;
+    top: -87%;
+    right: 36%;
+}
+
+#bottom {
+    position: absolute;
+    top: 320px;
+    left: 130px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1025px){
+    #bottom{
+        top: 318px;
+        left: 564px;
+    }
+    #top {
+        top: -88%;
+        right: 52%;
+    }
+}
