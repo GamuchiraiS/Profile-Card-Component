@@ -134,8 +134,8 @@ main {
 /*Desktop*/
 @media screen and (min-width: 1025px){
     #bottom{
-        top: 318px;
-        left: 564px;
+        top: 405px;
+        left: 620px;
     }
     #top {
         top: -88%;
