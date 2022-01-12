@@ -30,7 +30,6 @@ main {
     background-color: #fff;
     border-radius: 0.9375rem; /*15px*/
     position: relative;
-    max-width: 19.375rem; /*310px*/
     z-index: 2;
     box-shadow: 0px 15px 10px rgba(0, 0, 255, 0.1);
 }
@@ -41,12 +40,11 @@ main {
 
 .card_pattern #pattern {
     border-radius: 0.9375rem 0.9375rem 0rem 0rem; /*15px*/
-    width: 19.375rem; /*310px*/;
 }
 
 .avatar{
     position: absolute;
-    transform: translateY(65%);
+    transform: translateY(80%);
 }
 
 #avatar{
@@ -59,8 +57,7 @@ main {
     flex-direction: column;
     align-items: center;
     font-size: 1.125rem ; /*18px*/
-    margin-top: 4.375rem; /*70px*/
-    width: 19.375rem; /*310px*/;
+    margin-top: 3.75rem; /*60px*/
 }
 
 .line{
@@ -68,17 +65,11 @@ main {
     background-color:hsl(0, 0%, 59%);
     width: 21.875rem; /*350px*/
     opacity: 0.3;
-    width: inherit;
 }
 
 .profile_stats {
     display: flex;
-    width: inherit;
     flex-direction: row;
-}
-
-.stats {
-    display: inline-block;
 }
   
 .stats_list {
@@ -88,9 +79,18 @@ main {
     align-items: center;
 }
 
+.stats:nth-child(3) > ul{
+    padding-right: 2.5rem; /*40px*/
+}
+
 #name{
     font-weight: 700;
     color:  hsl(229, 23%, 23%);
+    display: inline-block;
+}
+
+h1{
+    font-size: 1.125rem ; /*18px*/
 }
 
 #age, #location, .description{
@@ -127,18 +127,18 @@ main {
 
 #bottom {
     position: absolute;
-    top: 320px;
-    left: 130px;
+    top: 16rem; /*320px*/
+    left: 8.125rem; /*130px*/
 }
 
 /*Desktop*/
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 64.0625rem){ /*1025px*/
     #bottom{
-        top: 405px;
-        left: 620px;
+        top: 19.875rem; /*318px*/
+        left: 35.25rem; /*564px*/
     }
     #top {
-        top: -88%;
+        top: -88%; 
         right: 52%;
     }
 }
