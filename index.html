@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Profile card component</title>
+</head>
+<body>
+  <main>
+    <!--Main container-->
+    <div class="container">
+      <!--Card pattern-->
+      <div class="card_pattern">
+        <img id = "pattern" src="./images/bg-pattern-card.svg" alt="background pattern">
+      </div>
+      <!--Picture of Victor-->
+      <div class="avatar">
+        <img id = "avatar" src="./images/image-victor.jpg" alt="a picture of a man">
+      </div>
+      <!--Info about victor-->
+      <div class="about">
+        <div class="info">
+          <!--His name-->
+          <span id="name">
+            Victor Crest
+          </span>
+          <!--Age-->
+          <span id="age">26</span>
+          <!--Location-->
+          <div id="location">
+            <p>London</p>
+          </div>
+        </div>
+        <!--Line-->
+        <div class="line">
+        </div>
+        <!--Profile stats-->
+        <div class="profile_stats">
+          <!--Followers-->
+          <span class="stats">
+            <ul class="stats_list">
+              <li class = "num">80K</li>
+              <li class = "description">Followers</li>
+            </ul>
+          </span>
+          <!--Likes-->
+          <span class="stats">
+            <ul class="stats_list">
+              <li class = "num">803K</li>
+              <li class = "description">Likes</li>
+            </ul>
+          </span>
+          <!--Photos-->
+          <span class="stats">
+            <ul class="stats_list">
+              <li class = "num">1.4K</li>
+              <li class = "description">Photos</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id = "top" class="bg">
+    <img src="./images/bg-pattern-top.svg" alt="a circle">
+  </div>
+  <div id = "bottom" class="bg">
+    <img src="./images/bg-pattern-bottom.svg" alt="a circle">
+  </div>
+</body>
+</html>
