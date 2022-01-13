@@ -21,6 +21,9 @@ main {
     justify-content: center;
     min-height: 100vh;
     background-color: hsl(185, 75%, 39%);
+    background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+    background-position: right 35vw bottom 50vh, left 20vw top 50vh;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -133,12 +136,7 @@ h1{
 
 /*Desktop*/
 @media screen and (min-width: 64.0625rem){ /*1025px*/
-    #bottom{
-        top: 19.875rem; /*318px*/
-        left: 35.25rem; /*564px*/
-    }
-    #top {
-        top: -88%; 
-        right: 52%;
+    main{
+        background-position: right 53vw bottom 30vh, left 47vw top 54vh;
     }
 }
